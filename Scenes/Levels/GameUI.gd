@@ -1,6 +1,7 @@
 extends Control
 
-@export var money_label : Label
+#@export var dementia_label : Label
 
 func _process(_delta):
-	money_label.text = "Coins: " + "%d" % GameManager.money
+	$DementiaLabel.text = "Dementia: " + "%d" % GameManager.dementia
+	#dementia_label.text = "Dementia: " + "%d" % GameManager.dementia

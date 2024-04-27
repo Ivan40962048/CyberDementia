@@ -56,7 +56,7 @@ func update_quest(source_quest : Quest):
 
 #Not in use.. finish quest and give reward here
 func complete_quest(quest : Quest):
-	GameManager.add_money(quest.quest_reward)
+	GameManager.add_dementia(quest.quest_reward)
 	announce_quest("Quest completed!", 3)
 	quest_info.text = ""
 	quest.free() #probably not necessary

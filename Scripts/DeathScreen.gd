@@ -7,8 +7,8 @@ func _process(_delta):
 	if Input.is_action_just_pressed("Restart"):
 		restart()
 
-#When the player dies and wishes to reset, remove all of their money and reload the level
+#When the player dies and wishes to reset, remove all of their dementia and reload the level
 func restart():
-	GameManager.reset_money()
+	GameManager.reset_dementia()
 	GameManager.load_same_level()
 
